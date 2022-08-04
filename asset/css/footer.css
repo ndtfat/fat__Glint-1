@@ -1,0 +1,116 @@
+.footer {
+    background-color: #111;
+}
+
+.footer__content {
+    padding: 112px 0;
+}
+
+.footer__desc,
+.footer__notify {
+    margin-top: 50px;
+}
+
+.footer__logo-wrap span {
+    color: var(--primary-text-color);
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.footer__desc-logo {
+    color: var(--primary-text-color);
+    font-size: 5rem;
+    margin-right: 14px;
+    text-transform: lowercase;
+}
+
+.footer__notify-detail,
+.footer__desc-text {
+    color: rgb(93 101 101);
+    font-size: 1.8rem;
+    line-height: 4rem;
+    margin-top: 30px;
+}
+
+.footer__notify-title {
+    height: 52px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.footer__notify-subcribe {
+    margin-top: 50px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footer__notify-subcribe-icon {
+    color: #fff;
+    font-size: 3.4rem;
+    margin-right: 16px;
+    transition: all ease-in-out .3s;
+}
+
+.footer__notify-input {
+    flex: 1;
+    height: 100%;
+    width: 256px;
+    font-size: 1.6rem;
+    border: 1px solid rgba(255,255,255,0.2);
+    background: #000;
+    color: rgb(255 255 255);
+    outline: none;
+    padding: 0 16px;
+    transition: all ease-in-out .3s;
+}
+
+.footer__notify-input:focus {
+    border-color: var(--primary-color);
+}
+
+.footer__notify-input:focus ~ .footer__notify-subcribe-icon {
+    color: var(--primary-color);
+}
+
+.footer__notify-input-submit {
+    height: 100%;
+    width: 140px;
+}
+
+.footer__copyright-container { justify-content: center;}
+
+.footer__copyright {
+    margin-top: 50px;
+    color: rgb(255 255 255 / 40%);
+    display: flex;
+    font-size: 1.4rem;
+    justify-content: center;
+}
+
+.footer__copyright p:first-child {
+    margin-right: 40px;
+    position: relative;
+}
+
+.footer__copyright p:first-child::after {
+    content: "";
+    height: 16px;
+    border-right: 1px solid rgb(255 255 255 / 40%);
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer__copyright a {
+    text-decoration: none;
+    color: #fff;
+    transition: all ease-in-out .3s;
+}
+
+.footer__copyright a:hover {color: var(--primary-color);}

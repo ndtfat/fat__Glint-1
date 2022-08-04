@@ -1,0 +1,99 @@
+#contact {
+    padding-top: 250px;
+    background-image: url(/asset/img/contact/background.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.contact__overlay {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.contact-container {
+    position: relative;
+}
+
+.section__title.contact {
+    color: #fff;
+}
+
+#contact .section__heading-separate { display: none; }
+
+/* BODY */
+.contact__body {
+    min-height: 790px;
+    margin-top: 50px;
+}
+
+.contact__info,
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    background: rgb(0 0 0 / 40%);
+    padding: 70px 46px;
+}
+
+.contact__body-title {
+    color: rgb(255 255 255);
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 60px;
+}
+
+.contact__form-input {
+    height: 60px;
+    color: #fff;
+    font-size: 1.6rem;
+    background: rgb(0 0 0 / 0%);
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(255 255 255 / 12%);
+    transition: all ease-in-out .3s;
+}
+
+.contact__form-input:focus {
+    border-color: var(--primary-color);
+}
+
+.contact__form-input::placeholder {
+    color: rgba(255, 255, 255, 0.12);
+}
+
+.contact__form-btn { height: 60px; }
+
+.contact__info { background: #121212; }
+
+.contact__info-item { margin-bottom: 50px; }
+
+.contact__info-item-about {
+    color: var(--primary-text-color);
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.contact__info-item-detail {
+    color: #5d6565;
+    font-size: 1.6rem;
+    margin-top: 20px;
+    line-height: 2.8rem;
+    font-weight: bold;
+}
+
+.contact__info-social-list { display: flex; }
+
+.contact__info-social-link { padding: 8px; }
+
+.contact__info-social-icon {
+    font-size: 2.4rem;
+    color: rgb(255 255 255);
+    transition: all ease-in-out .3s;
+}
+
+.contact__info-social:hover .contact__info-social-icon {
+    color: var(--primary-text-color);
+}

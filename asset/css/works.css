@@ -1,0 +1,138 @@
+#works {
+    position: relative;
+    height: 2510px;
+}
+
+.works__background--black {
+    background-color: #111;
+    margin-top: -162px;
+    height: 640px;
+    padding: 162px;
+}
+
+.works__container {
+    width: 100%;
+    position: absolute;
+    top: 162px; left: 50%;
+    transform: translateX(-50%);
+}
+
+.section__title.works {
+    color: #fff;
+}
+
+.section__heading-separate.works {
+    border-color: rgba(255, 255,255, 0.2);
+}
+
+.works__list {     
+    margin-top: 100px; 
+}
+
+.works__item {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.works__item-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transform: scale(1);
+    transition: all ease-in 0.5s;
+}
+
+.works__item:hover .works__item-img {
+    transform: scale(1.1);
+}
+
+/* ITEM HOVER */
+.works__item:hover .works__item--hover {    
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.works__item--hover {
+    background-color: transparent;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    padding: 40px 28px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all ease-in-out .3s;
+}
+
+.works__item--hover::before {
+    content: "+";
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 4rem;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all ease-in-out .3s;
+}
+
+.works__item:hover .works__item--hover::before {
+    opacity: 1;
+}
+
+.works__item-link--hover {
+    height: 50px;
+    width: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transform: translateY(-90px);
+    transition: all ease-in-out .3s;
+    cursor: grab;
+}
+
+.works__item:hover .works__item-name--hover,
+.works__item:hover .works__item-link--hover {
+    transform: translateY(0);
+}
+
+.works__item-link--hover:hover {
+    background-color: #fff;
+}
+
+.works__item-link--hover:hover .works__item-link-icon {
+    color: var(--primary-color);
+}
+
+.works__item-link--hover::before {
+    content: "";
+    width: 1px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    top: calc(-100% + 4px); left: 50%;
+}
+
+.works__item-link-icon {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.6rem;
+    transition: all ease-in-out .5s;
+}
+
+.works__item-name--hover {
+    color: #fff;
+    transform: translateY(160%);
+    transition: all ease-in-out .3s;
+}
+
+.works__item-title--hover {
+    font-size: 2.6rem;
+    letter-spacing: 2px;
+}
+
+.works__item-sub-title--hover {
+    font-size: 1.6rem;
+    margin-top: 10px;
+    opacity: 0.6;
+}

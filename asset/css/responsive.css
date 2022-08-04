@@ -1,0 +1,194 @@
+/*PC*/
+@media (min-width: 1024px) {
+    .header__slogan-text { padding-right: 20%;}
+
+    .service__item-icon {
+        transform: translateY(24px);
+    }
+ 
+}
+
+/*Tablet*/
+@media (min-width: 740px) and (max-width: 1023px) {
+    .header__slogan-welcom { font-size: 1.2rem; }
+
+    .header__slogan-text{
+        font-size: 4rem;
+        line-height: 4.8rem;
+        padding: 0;
+    }
+
+    .introduce__data-item:nth-child(2)::after { display: none;}
+
+    .service__item-desc { padding: 0 50px; }
+
+    #works { height: 1652px;}
+
+    .m-disappear { display: none; }
+
+    .clients__slide.CEO { display: flex; }
+    
+    .clients__CEO-container { margin-bottom: 0;}
+
+}
+
+@media (max-width: 1023px) {
+    .m-s__text-center {  text-align: center !important; }
+    
+    .service__item { 
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .service__item-icon {
+        font-size: 6rem;
+        text-align: center;
+        margin: 0;
+    }
+
+    .clients__CEO-btn { display: none; }
+    
+    .contact__info { background: rgb(0 0 0 / 40%); }
+
+}
+
+/*Mobile*/
+@media (max-width: 740px) {
+    .header__menu,
+    .go-up { 
+        right:20px; 
+    }
+
+    .s-disappear { display: none; }
+
+    .section__heading { padding: 0 20px; }
+
+    .section__sub-title { font-size: 1.4rem; }
+
+    .section__title { font-size: 3.4rem; }
+
+    .header__socials-list { display: none;}
+
+    .header__body {
+        left: 0; right: 0;
+    }
+
+    .header__slogan {
+        text-align: center;
+        padding: 0 20px;
+        font-weight: bold;
+    }
+
+    .header__slogan-welcom { font-size: 1.4rem; }
+
+    .header__slogan-text {
+        font-size: 3rem;
+        line-height: 3.8rem;
+    }
+
+    .header__btns { margin: 80px 0; }
+
+    .header__btn {
+        display: block;
+        margin: 0 44px 20px;
+    }
+
+    .next-section {
+        right: 50%;
+        transform: translateX(50%);
+        animation: appear ease-in-out 1s;
+    }
+
+    .next-section::after,
+    .next-section::before {
+        height: 10rem;
+        right: calc(50% - 8px);
+        animation: appear ease-in-out 1s;
+    }
+
+    .next-section::after { top: 48px; }
+    .next-section::before { top: 150px; }
+
+    .introduce__desc-text {
+        padding: 0 31px;
+        font-size: 1.8rem;
+        line-height: 3rem;
+    }
+
+    .introduce__data-item {
+        padding-bottom: 30px;
+    }
+
+    .introduce__data-item:nth-child(1)::after,
+    .introduce__data-item:nth-child(2)::after,
+    .introduce__data-item:nth-child(3)::after {
+        border-right: 0;
+        border-bottom: 1px solid rgb(255 255 255 / 30%);
+        left: 50%; top: 100%;
+        transform: translateX(-50%);
+        height: 1px;
+        width: calc(100% - 160px);
+    }
+
+    .clients__CEO-desc,
+    .service__item-desc { 
+        padding: 0 20px;
+        font-size: 1.6rem;
+        line-height: 3rem;
+    }
+    
+    #works { height: 2988px;}
+
+    .works__container { padding: 0 20px; }
+
+    .works__list:nth-child(2) { margin: 0; }
+
+    .clients__logo-list {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .contact__info { text-align: center; }
+
+    .contact__info-social-list {
+        justify-content: space-around;
+    }
+
+    .footer__content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .footer__notify-subcribe {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .footer__notify-input {
+        padding: 30px 10px;
+        width: 100%;
+        font-size: 1.8rem;
+    }
+
+    .footer__notify-input-submit {
+        width: 100%;
+        padding: 31px;
+        margin-top: 20px;
+    }
+
+    .footer__copyright-container {
+        margin-top: 100px;
+    }
+    
+    .footer__copyright {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        font-size: 1.6rem;
+    }
+
+    .footer__copyright p:first-child  { margin: 0; }
+
+    .footer__copyright p:first-child::after { display: none; }
+}

@@ -1,0 +1,30 @@
+
+
+.service__item {
+    display: flex;
+    margin-top: 70px;
+}
+
+.service__item-icon {
+    font-size: 6rem;
+    color: var(--primary-color);
+    margin-right: 32px;
+}
+
+.service__item-name {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.service__item-desc {
+    margin-top: 26px;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    padding-right: 80px;
+    text-align: justify;
+}
+
+.section__heading-separate.services {
+    border-color: rgba(0, 0, 0, 0.2);
+}
